@@ -1,0 +1,423 @@
+:root {
+  --primary: #007CC2;
+  --dark-blue: #03315B;
+  --text: #555;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  color: var(--text);
+}
+
+/* HEADER */
+.header {
+  background: #414042;
+  color: #D1D3D4;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 15px 10px;
+}
+
+/* TITLE */
+.card-title {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+/* PRICE */
+.card-price {
+  color: var(--dark-blue);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* DESCRIPTION */
+.card-desc {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.card button {
+  margin-top: 10px;
+  background: var(--primary);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 2px solid #1962A1;
+}
+
+.card button:hover {
+  background: var(--dark-blue);
+}
+
+/* FOOTER */
+.footer {
+  background: #414042;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* TOP BAR */
+.top-bar {
+  background: #e6e7e8;
+  color: #777;
+  font-size: 14px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MAIN HEADER */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #fff;
+}
+
+/* LOGO */
+.logo img {
+  height: 50px;
+}
+
+/* SEARCH */
+.search-box {
+  flex: 1;
+  margin: 0 40px;
+  display: flex;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #03315B;
+  border-right: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  background: #03315B;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/* RIGHT ICONS */
+.header-icons {
+  font-size: 14px;
+  color: #555;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #03315B;
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* PAGE TITLE */
+.header {
+  background: #414042;
+  color: #D1D3D4;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-transform: uppercase;
+}
+
+/* TOP TEXT */
+.footer-top-text {
+  background: #f5f5f5;
+  padding: 25px 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #03315B;
+}
+
+.footer-top-text strong {
+  color: #007CC2;
+}
+
+/* FOOTER MAIN */
+.footer {
+  background: #4a4a4d;
+  color: #ccc;
+  padding: 30px 20px;
+}
+
+/* LINKS ROW */
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* CART */
+.cart {
+  margin-left: auto;
+  color: #aaa;
+}
+
+/* SOCIAL TEXT */
+.social-text {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.social-text span {
+  color: #00AEEF;
+  font-weight: bold;
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.social-buttons button {
+  background: linear-gradient(to right, #007CC2, #1962A1);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.social-buttons button:hover {
+  background: #03315B;
+}
+
+/* COPYRIGHT */
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* HORIZONTAL SCROLL FRAME */
+.image-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+/* IMAGES */
+.image-scroll img {
+  height: 220px;
+  width: auto;
+  border-radius: 6px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* OPTIONAL: Hide scrollbar (clean look) */
+.image-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* IMAGES */
+.slider-track img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* BUTTONS */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.4);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #03315B;
+}
+
+/* LEFT / RIGHT */
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+/* HOVER EFFECT */
+.slider-btn:hover {
+  background: rgba(255,255,255,0.7);
+}
+
+/* FRAME (only shows 1 image) */
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+/* TRACK (horizontal strip) */
+.slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+/* EACH IMAGE = FULL FRAME */
+.slider-track img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* BUTTONS */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.3);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #03315B;
+}
+
+/* POSITION */
+.slider-btn.left { left: 10px; }
+.slider-btn.right { right: 10px; }
+
+/* HOVER */
+.slider-btn:hover {
+  background: rgba(255,255,255,0.6);
+}
+
+/* LIGHTBOX BACKGROUND */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
