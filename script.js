@@ -28,3 +28,40 @@ function openLightbox(src) {
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
 }
+function addToCart(productName) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Check if item already exists
+    let existingItem = cart.find(item => item.name === productName);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            name: productName,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    updateCartDisplay();
+
+    alert(productName + " added to cart!");
+}
+
+function updateCartDisplay() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+    document.getElementById("cart-count").textContent = `🛒 ${totalItems} PRODUCT(S)`;
+
+    let footer = document.getElementById("cart-footer");
+    if (footer) {
+        footer.textContent = `🛒 ${totalItems} PRODUCT(S)`;
+    }
+}
+
+// Run when page loads
+window.onload = updateCartDisplay;

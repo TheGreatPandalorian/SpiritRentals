@@ -29,7 +29,7 @@
   </div>
 
   <div class="header-icons">
-    <span>🛒 0 PRODUCT(S)</span>
+    <span id="cart-count">🛒 0 PRODUCT(S)</span>
   </div>
 </div>
 
@@ -70,7 +70,7 @@
       <div class="card-desc">
         Heavy duty made for the larger need of support.
       </div>
-      <button onclick="location.href='wheelchairs.html'">View Details</button>
+      <button onclick="location.href='wheelchairs.html'">Book</button>
     </div>
   </div>
 
@@ -95,11 +95,11 @@
       <div class="card-desc">
         Heavy duty made for the larger need of support.
       </div>
-      <button onclick="location.href='wheelchairs.html'">View Details</button>
+      <button onclick="location.href='wheelchairs.html'">Book</button>
     </div>
   </div>
 
-  <!-- ITEM 3 -->
+  <!-- ITEM 4 -->
   <div class="card">
     <div class="image-slider">
       <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
@@ -119,10 +119,32 @@
       <div class="card-desc">
         Built for strength and support.
       </div>
-      <button onclick="location.href='wheelchairs.html'">View Details</button>
+      <button onclick="location.href='wheelchairs.html'">Book</button>
     </div>
   </div>
+  <!-- ITEM 3 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
 
+      <div class="slider-track">
+        <img src="Untitled.png" onclick="openLightbox(this.src)">
+        <img src="Untitled (1).png" onclick="openLightbox(this.src)">
+        <img src="Untitled (2).png" onclick="openLightbox(this.src)">
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>
+
+    <div class="card-content">
+      <h2 class="card-title">Basic Duty Walker</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        Strong and supportive.  With a chair and storage.
+      </div>
+      <button onclick="location.href='wheelchairs.html'">Book</button>
+    </div>
+  </div>
 </div>
 
 <div class="footer-top-text">
@@ -142,7 +164,7 @@
     <a href="#">Privacy policy</a>
     <a href="#">Disclaimer</a>
 
-    <div class="cart">🛒 0 PRODUCT(S)</div>
+    <span id="cart-footer">🛒 0 PRODUCT(S)</span>
   </div>
 
   <div class="social-text">

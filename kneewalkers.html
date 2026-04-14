@@ -29,7 +29,7 @@
   </div>
 
   <div class="header-icons">
-    <span>🛒 0 PRODUCT(S)</span>
+    <span id="cart-count">🛒 0 PRODUCT(S)</span>
   </div>
 </div>
 
@@ -50,20 +50,28 @@
 <div class="container">
 <div class="grid">
 
-  <!-- ITEM 1 -->
+    <!-- ITEM 3 -->
   <div class="card">
     <div class="image-slider">
       <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
 
       <div class="slider-track">
         <img src="20260409_101520.png" onclick="openLightbox(this.src)">
-        <img src="20260409_101529 (1).png" onclick="openLightbox(this.src)">
+        <img src="20260409_101529.png" onclick="openLightbox(this.src)">
         <img src="20260409_101539.png" onclick="openLightbox(this.src)">
       </div>
 
       <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
     </div>
 
+    <div class="card-content">
+      <h2 class="card-title">KneeWalker</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        Built for strength and support.
+      </div>
+      <button onclick="addToCartAndGo('KneeWalker')">Book</button>
+    </div>
   </div>
 </div>
 
@@ -84,7 +92,7 @@
     <a href="#">Privacy policy</a>
     <a href="#">Disclaimer</a>
 
-    <div class="cart">🛒 0 PRODUCT(S)</div>
+    <span id="cart-footer">🛒 0 PRODUCT(S)</span>
   </div>
 
   <div class="social-text">

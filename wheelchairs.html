@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Wheelchairs | SpiritRx</title>
+<title>Rentals | SpiritRx</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -29,7 +29,7 @@
   </div>
 
   <div class="header-icons">
-    <span>🛒 0 PRODUCT(S)</span>
+    <span id="cart-count">🛒 0 PRODUCT(S)</span>
   </div>
 </div>
 
@@ -42,68 +42,205 @@
   <a href="#">CONTACT US</a>
 </div>
 
-<body>
-
 <!-- PAGE TITLE -->
 <div class="header">
-  <h1>Wheel Chairs</h1>
+  <h1>wheelchairs</h1>
 </div>
 
 <div class="container">
-  <div class="grid">
+<div class="grid">
 
-    <!-- ITEM 1 -->
-    <div class="card">
-      <img src="20260409_101057.png" alt="Standard Wheelchair">
-      <div class="card-content">
-        <h2 class="card-title">Standard Wheelchair</h2>
-        <div class="card-price">$15 / day</div>
-        <div class="card-desc">
-          Durable everyday wheelchair with comfortable seating and foldable frame.
-        </div>
-        <button>View Details</button>
+  <!-- ITEM 1 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_101057.png" onclick="openLightbox(this.src)">
+        <img src="20260409_101140.png" onclick="openLightbox(this.src)">
+        <img src="20260409_101156.png" onclick="openLightbox(this.src)">
       </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
     </div>
 
-    <!-- ITEM 2 -->
-    <div class="card">
-      <img src="images/wheelchair2.jpg" alt="Transport Wheelchair">
-      <div class="card-content">
-        <h2 class="card-title">Transport Wheelchair</h2>
-        <div class="card-price">$12 / day</div>
-        <div class="card-desc">
-          Lightweight and compact chair ideal for travel and short-term use.
-        </div>
-        <button>View Details</button>
+    <div class="card-content">
+      <h2 class="card-title">Deluxe Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        A wheelchair with firm thick cushion and supportive backing.
       </div>
+      <button onclick="addToCartAndGo('Deluxe Wheelchair')">Book</button>
+    </div>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_101658.png" onclick="openLightbox(this.src)">
+        <img src="20260409_101732.png" onclick="openLightbox(this.src)">
+        <img src="20260409_101746.png" onclick="openLightbox(this.src)">
+        <img src="20260409_101758.png" onclick="openLightbox(this.src)">
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
     </div>
 
-    <!-- ITEM 3 -->
-    <div class="card">
-      <img src="images/wheelchair3.jpg" alt="Heavy Duty Wheelchair">
-      <div class="card-content">
-        <h2 class="card-title">Heavy Duty Wheelchair</h2>
-        <div class="card-price">$20 / day</div>
-        <div class="card-desc">
-          Extra-wide frame designed for maximum strength and support.
-        </div>
-        <button>View Details</button>
+    <div class="card-content">
+      <h2 class="card-title">Legends Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        A stylish blue, supportive sturdy fabric for the seat and back.
       </div>
+      <button onclick="addToCart('Legends Wheelchair')">Book</button>
     </div>
+  </div>
+
+  <!-- ITEM 3 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_102122.png" onclick="openLightbox(this.src)">
+        <img src="20260409_102205.png" onclick="openLightbox(this.src)">
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>
+
+    <div class="card-content">
+      <h2 class="card-title">Light and Compact Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        Built for strength and support.  Easily foldable and light weight for storage.
+      </div>
+      <button onclick="addToCartAndGo('Light and Compact Wheelchair')">Book</button>
+    </div>
+  </div>
 
     <!-- ITEM 4 -->
-    <div class="card">
-      <img src="images/wheelchair4.jpg" alt="Reclining Wheelchair">
-      <div class="card-content">
-        <h2 class="card-title">Reclining Wheelchair</h2>
-        <div class="card-price">$25 / day</div>
-        <div class="card-desc">
-          Adjustable reclining backrest for added comfort and positioning.
-        </div>
-        <button>View Details</button>
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_102443.png" onclick="openLightbox(this.src)">
+        <img src="20260409_102501.png" onclick="openLightbox(this.src)">
       </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
     </div>
 
+    <div class="card-content">
+      <h2 class="card-title">Deluxe Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        A wheelchair with firm thick cushion and supportive backing.
+      </div>
+      <button onclick="addToCartAndGo('Deluxe Wheelchair')">Book</button>
+    </div>
+  </div>
+
+    <!-- ITEM 5 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_103029.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103042.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103051.png" onclick="openLightbox(this.src)">
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>
+
+    <div class="card-content">
+      <h2 class="card-title">General Purpose Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        General wheelchair, used for all types of purposes
+      </div>
+      <button onclick="addToCartAndGo('General Purpose Wheelchair')">Book</button>
+    </div>
+  </div>
+
+    <!-- ITEM 6 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_103341.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103355.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103405.png" onclick="openLightbox(this.src)">
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>
+
+    <div class="card-content">
+      <h2 class="card-title">Righty</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        Raised right footing, while sitting comfortably in a wheelchair.
+      </div>
+      <button onclick="addToCartAndGo('Righty')">Book</button>
+    </div>
+  </div>
+
+    <!-- ITEM 7 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_103507.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103449.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103500.png" onclick="openLightbox(this.src)">
+       
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>
+
+    <div class="card-content">
+      <h2 class="card-title">Basic Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        Support and comfort.
+      </div>
+      <button onclick="addToCartAndGo('Basic Wheelchair')">Book</button>
+    </div>
+  </div>
+
+    <!-- ITEM 8 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="20260409_103547.png" onclick="openLightbox(this.src)">
+         <img src="20260409_103537.png" onclick="openLightbox(this.src)">
+        <img src="20260409_103556.png" onclick="openLightbox(this.src)">
+        
+      </div>
+    
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>  
+
+    <div class="card-content">
+      <h2 class="card-title">Light and Compact Wheelchair</h2>
+      <div class="card-price">$ / </div>
+      <div class="card-desc">
+        Built for strength and support.  Easily foldable and light weight for storage.
+      </div>
+      <button onclick="addToCartAndGo('Light and Compact Wheelchair')">Book</button>
+    </div>
   </div>
 </div>
 
@@ -124,7 +261,7 @@
     <a href="#">Privacy policy</a>
     <a href="#">Disclaimer</a>
 
-    <div class="cart">🛒 0 PRODUCT(S)</div>
+    <span id="cart-footer">🛒 0 PRODUCT(S)</span>
   </div>
 
   <div class="social-text">
@@ -144,6 +281,11 @@
   </div>
 
 </footer>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+</div>
 <script src="script.js"></script>
 </body>
 </html>
