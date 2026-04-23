@@ -50,7 +50,7 @@
 <div class="container">
 <div class="grid">
 
-    <!-- ITEM 3 -->
+    <!-- ITEM 1 -->
   <div class="card">
     <div class="image-slider">
       <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
@@ -65,33 +65,61 @@
     </div>
 
     <div class="card-content">
-      <h2 class="card-title">KneeWalker</h2>
-      <div class="card-price">$ / </div>
+      <h2 class="card-title">Knee Walker</h2>
+      <h2 class="card-detail">Details</h2>
       <div class="card-desc">
-        Built for strength and support.
+        <p>Brand: Knee Rover</p>
+        <p>Serial # 170507222</p>
+        <p>Knee Pad Size: 12" Length and 7" Width</p>
       </div>
-      <button onclick="addToCartAndGo('KneeWalker')">Book</button>
+      <button onclick="addToCartAndGo('Knee Walker')">Book</button>
     </div>
   </div>
+      <!-- ITEM 2 -->
+  <div class="card">
+    <div class="image-slider">
+      <button class="slider-btn left" onclick="slide(this, -1)">❮</button>
+
+      <div class="slider-track">
+        <img src="Medline (1).png" onclick="openLightbox(this.src)">
+        <img src="Medline (2).png" onclick="openLightbox(this.src)">
+        <img src="Medline (3).png" onclick="openLightbox(this.src)">
+      </div>
+
+      <button class="slider-btn right" onclick="slide(this, 1)">❯</button>
+    </div>
+
+    <div class="card-content">
+      <h2 class="card-title">Knee Walker</h2>
+      <h2 class="card-detail">Details</h2>
+      <div class="card-desc">
+        <p>Brand: Medline</p>
+        <p>Serial # MDS8600G2</p>
+        <p>Knee Pad Size: 15" Length and 8" Width</p>
+        <P>Weight Capacity: 300lbs</P>
+      </div>
+      <button onclick="addToCartAndGo('Knee Walker')">Book</button>
+    </div>
+  </div>
+</div>
+
 </div>
 
 <div class="footer-top-text">
   <p>
     <strong>SpiritRx Services;</strong> Your one-stop-shop for a broad selection of medical supplies and equipment.
     We can accommodate bulk ordering and ship directly to Health Centres, Nursing Stations, Home & Community Care Programs,
-    Jordan’s Principal Programs and Personal Care Homes, etc.
+    Jordan’s Principle Programs and Personal Care Homes, etc.
   </p>
 </div>
 
 <footer class="footer">
-
   <div class="footer-links">
     <a href="#">About us</a>
     <a href="#">Contact us</a>
     <a href="#">Help</a>
     <a href="#">Privacy policy</a>
     <a href="#">Disclaimer</a>
-
     <span id="cart-footer">🛒 0 PRODUCT(S)</span>
   </div>
 
@@ -110,8 +138,14 @@
   <div class="copyright">
     © Copyright 2026 SpiritRx Services. All rights reserved. Powered by Sana Commerce.
   </div>
-
 </footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" alt="Expanded product image">
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
